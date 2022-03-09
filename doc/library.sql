@@ -93,7 +93,7 @@ SELECT u.uname
 FROM users AS u,rentings AS r
 WHERE u.userid=r.userid AND r.bid IN('6112','2332')
 GROUP BY u.uname
-HAVING COUNT(*)>1;# AND r.bid = '6112';
+HAVING COUNT(*)>1;
 
 -- How many books does the library have on fiction and statistics topic.
 SELECT COUNT(bname) AS COUNT
